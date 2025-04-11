@@ -1,0 +1,300 @@
+:root {
+    --glow-color: rgba(145, 132, 223, 0.6);
+}
+
+.home-container {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(145, 132, 223, 1) #1e1e2f;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+body::-webkit-scrollbar-thumb,
+.home-container::-webkit-scrollbar-thumb {
+    background-color: rgba(145, 132, 223, 0.8);
+    border-radius: 10px;
+    border: 2px solid #1e1e2f;
+}
+
+.home-thumbnail {
+    position: relative;
+}
+
+.home-thumbnail img {
+    width: 100vw;
+    height: 70vh;
+}
+
+.home-slogan,
+.home-sub-slogan {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    word-wrap: break-word;
+    width: 80vw;
+}
+
+.home-slogan-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    line-height: 1.1;
+    margin-top: 10vh;
+}
+
+.home-slogan {
+    font-size: 5rem;
+}
+
+.home-sub-slogan {
+    margin-top: 5vh;
+    font-size: 1.5rem;
+}
+
+.home-btn-accessAI {
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(#FF6E40, #FF007F);
+    width: 20vw;
+    height: 6vh;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background 1s ease-in-out, transform 1s ease-in-out;
+    border-radius: 10px;
+    border: none;
+}
+
+.home-btn-accessAI:hover {
+    background: linear-gradient(#f97148, #f73696);
+}
+
+.home-course-area {
+    width: 65%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10rem;
+    z-index: 10;
+}
+
+.home-course-title {
+    font-size: 4.5rem;
+}
+
+.home-course-detail {
+    font-size: 1.8rem;
+    box-shadow: rgba(0, 0, 0, 1);
+    text-align: center;
+}
+
+.home-course-img-container {
+    background-image: url('../../public/images/startsky2.jpg');
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+}
+
+.home-course-glow {
+    position: absolute;
+    width: 81%;
+    height: 100%;
+    box-shadow:
+        0px 0px 20em 3em var(--glow-color),
+        0px 0px 60px 10px var(--glow-color);
+    border: 1.5rem solid var(--glow-color);
+    outline: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.home-course-glow2 {
+    position: absolute;
+    width: 81%;
+    height: 100%;
+    background: linear-gradient(rgba(145, 132, 223, 1), rgba(3, 252, 44, 1));
+    filter: blur(80px);
+    z-index: 0;
+}
+
+.home-course-glow3 {
+    position: absolute;
+    width: 81%;
+    height: 50%;
+    left: 13%;
+    background: rgba(3, 252, 44, 0.5);
+    filter: blur(40px);
+    z-index: 0;
+}
+
+.home-course-img {
+    position: relative;
+    width: 81%;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.course-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-course-description {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    z-index: 1;
+    margin-top: -20vh;
+    position: relative;
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    border-bottom: none;
+}
+
+.home-table-description {
+    width: 83.7vw;
+    border-collapse: collapse;
+}
+
+.h-t-des-column {
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    padding: 1.5vh 5vh;
+    line-height: 1.3rem;
+    vertical-align: top;
+}
+
+.col-3 {
+    width: 33%;
+}
+
+.h-t-des-title {
+    font-size: 1.3rem;
+}
+
+.h-t-des-content {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.h-t-des-additional-infor {
+    width: 83vw;
+    display: flex;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.home-ai-img-container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+}
+
+.h-ai-container {
+    position: relative;
+    width: 83.7%;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(145, 132, 223, 0.3));
+    border-radius: 20px;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.home-ai-img {
+    position: relative;
+    width: 40vw;
+    height: 50vh;
+    top: -5%;
+    left: 45%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    border: 0.6rem solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.h-ai-des-container {
+    position: relative;
+    width: 30vw;
+    font-size: 1.3rem;
+    left: 5%;
+    top: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.h-ai-des-title {
+    color: white;
+}
+
+.h-ai-des-content {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.h-ai-des-toAIPage {
+    margin-top: 2vh;
+    cursor: pointer;
+    color: rgba(105, 165, 220, 1);
+}
+
+.h-ai-des-toAIPage:hover {
+    color: rgb(134, 186, 234);
+    transition: 1s;
+}
+
+.home-ai-diamond-shape {
+    position: absolute;
+    width: 50vw;
+    height: 90vh;
+    left: 40%;
+    top: 5%;
+    z-index: 0;
+    filter: blur(90px);
+}
+
+.home-ai-diamond-shape::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(145, 132, 223, 1), rgba(3, 252, 44, 0));
+    clip-path: polygon(0% 0%,
+            100% 0%,
+            75% 50%,
+            100% 100%,
+            0% 100%,
+            25% 50%);
+}

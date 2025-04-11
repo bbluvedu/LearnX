@@ -1,0 +1,24 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Ignore frontend dependencies
+felearnx/node_modules/
+felearnx/.pnp
+felearnx/.pnp.js
+
+# Ignore test coverage
+felearnx/coverage/
+
+# Ignore production build
+felearnx/build/
+
+# Ignore misc
+felearnx/.DS_Store
+felearnx/.env.local
+felearnx/.env.development.local
+felearnx/.env.test.local
+felearnx/.env.production.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

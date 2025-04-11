@@ -1,0 +1,59 @@
+/* dark mode */
+[data-theme="dark"] {
+    --background-color: rgb(25, 25, 28);
+    --h-feature-name: rgba(176, 174, 174, 1);
+    --h-feature-name-hover: rgb(236, 234, 234);
+}
+
+/* light mode */
+[data-theme="light"] {
+    --background-color: rgba(255, 255, 255);
+}
+
+.h-container {
+    position: fixed;
+    background-color: var(--background-color);
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    top: 0;
+}
+
+.h-box {
+    display: flex;
+    max-width: 80vw;
+    height: 70%;
+}
+
+.h-logo {
+    color: var(--h-feature-name);
+    width: 30vw;
+}
+
+.h-features-box {
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    width: 70vw;
+}
+
+.h-feature {
+    color: var(--h-feature-name);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.h-feature:hover {
+    color: var(--h-feature-name-hover)
+}
+
+.h-search-icon {
+    size: 20;
+    color: var(--h-feature-name);
+}

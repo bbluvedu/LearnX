@@ -1,0 +1,51 @@
+.h-search-overlay {
+    position: fixed;
+    margin-top: 2vh;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 100;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.h-search-container {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 8px;
+    width: 80vw;
+    height: 60vh;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+.h-search-input {
+    margin-top: 10px;
+    width: 75vw;
+    height: 4vh;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #1E88E5;
+}
+
+.h-search-close {
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.h-search-infor {
+    width: 75vw;
+}
